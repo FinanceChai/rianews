@@ -1,8 +1,8 @@
 import requests
 
 # Constants
-TELEGRAM_TOKEN = '7018488271:AAFpadGFgh-y4js6mVdTaWvjGz9pofZFoHs'
-OPENAI_API_KEY = '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'
+TELEGRAM_TOKEN = '123'
+OPENAI_API_KEY = '123'
 CHAT_ID = '-1001997793892'
 
 def send_telegram_message(token, chat_id, text):
