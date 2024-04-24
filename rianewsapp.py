@@ -3,7 +3,7 @@ import requests
 # Constants
 TELEGRAM_TOKEN = '123'
 OPENAI_API_KEY = '123'
-CHAT_ID = '-1001997793892'
+CHAT_ID = '123'
 
 def send_telegram_message(token, chat_id, text):
     url = f"https://api.telegram.org/bot{token}/sendMessage"
