@@ -1,13 +1,15 @@
-import requests
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+dotev_path = "C:/users/daniy/Desktop/rianewsapp.env"
+load_dotenv(dotev_path)
+
+import requests
 
 # Constants
-TELEGRAM_TOKEN = '7018488271:AAFpadGFgh-y4js6mVdTaWvjGz9pofZFoHs'
+TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-CHAT_ID = os.getenv('-1001997793892')
+CHAT_ID = os.getenv('CHAT_ID_RIANEWS')
 
 
 def send_telegram_message(token, chat_id, text):
