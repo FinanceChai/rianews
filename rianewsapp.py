@@ -1,9 +1,14 @@
 import requests
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 # Constants
-TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
+TELEGRAM_TOKEN = os.getenv('7018488271:AAFpadGFgh-y4js6mVdTaWvjGz9pofZFoHs')
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-CHAT_ID = os.getenv('CHAT_ID_RIANEWS')
+CHAT_ID = os.getenv('-1001997793892')
+
 
 def send_telegram_message(token, chat_id, text):
     url = f"https://api.telegram.org/bot{token}/sendMessage"
