@@ -1,9 +1,8 @@
-# test_env.py
 from dotenv import load_dotenv
 import os
 
-
+# Load environment variables from the .env file
 load_dotenv()
 
-# Print the value of TELEGRAM_TOKEN environment variable
-print("TELEGRAM_TOKEN:", os.getenv("TELEGRAM_TOKEN"))
+# Print all environment variables
+print(os.environ)
