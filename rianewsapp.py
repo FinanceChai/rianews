@@ -4,6 +4,11 @@ import os
 dotenv_path = '/home/rianews/.env'
 load_dotenv(dotenv_path)
 
+# Constants
+TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+CHAT_ID = os.getenv('CHAT_ID_RIANEWS')
+
 print("Loaded TELEGRAM_TOKEN:", os.getenv('TELEGRAM_TOKEN'))
 print("Loaded OPENAI_API_KEY:", os.getenv('OPENAI_API_KEY'))
 print("Loaded CHAT_ID_RIANEWS:", os.getenv('CHAT_ID_RIANEWS'))
