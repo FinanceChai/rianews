@@ -1,3 +1,4 @@
+import requests
 from dotenv import load_dotenv
 import os
 
@@ -13,8 +14,6 @@ print("Loaded TELEGRAM_TOKEN:", os.getenv('TELEGRAM_TOKEN'))
 print("Loaded OPENAI_API_KEY:", os.getenv('OPENAI_API_KEY'))
 print("Loaded CHAT_ID_RIANEWS:", os.getenv('CHAT_ID_RIANEWS'))
 
-
-import requests
 
 # Constants
 TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
