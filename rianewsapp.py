@@ -1,7 +1,8 @@
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+dotenv_path = '/home/rianews/.env'
+load_dotenv(dotenv_path)
 
 print("Loaded TELEGRAM_TOKEN:", os.getenv('TELEGRAM_TOKEN'))
 print("Loaded OPENAI_API_KEY:", os.getenv('OPENAI_API_KEY'))
