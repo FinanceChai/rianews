@@ -11,6 +11,9 @@ TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 CHAT_ID = os.getenv('CHAT_ID_RIANEWS')
 
+print("TELEGRAM_TOKEN:", TELEGRAM_TOKEN)
+print("OPENAI_API_KEY:", OPENAI_API_KEY)
+print("CHAT_ID:", CHAT_ID)
 
 def send_telegram_message(token, chat_id, text):
     url = f"https://api.telegram.org/bot{token}/sendMessage"
