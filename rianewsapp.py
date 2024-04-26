@@ -1,8 +1,7 @@
 from dotenv import load_dotenv
 import os
 
-dotev_path = "C:/users/daniy/Desktop/rianewsapp.env"
-load_dotenv(dotev_path)
+load_dotenv()
 
 import requests
 
