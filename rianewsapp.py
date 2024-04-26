@@ -45,7 +45,7 @@ def handle_command(text, chat_id):
         if not query:
             send_telegram_message(TELEGRAM_TOKEN, chat_id, "Please provide some context after /rianews, e.g., '/rianews How is apple stock doing right now?'")
             return
-        prompt = "Respond to the question proposed by the user. The prompt must ask questions about companies in the S&P 500. Create a 2-3 sentence response, using succinct sentence structures. The first line is a blank space. The next line in the resonse should eb the title $RIA BREAKING NEWS. Then a space in between. Then the response to the user's input should be satirical funny. Make sure the response is relevant to the question and readdresses the company they are asking about".join(query)
+        prompt = "Respond to the question proposed by the user. The prompt must ask questions about companies in the S&P 500. Create a 2-3 sentence response, using to the point sentence structures with AIDA framework. The first line is a blank row. The next line in the response, which should be the title BREAKING NEWS. Then a space in between. Then the response to the user's input should be satirical funny. Make sure the response is relevant to the question and readdresses the company they are asking about".join(query)
         try:
             content = generate_openai_content(prompt)
             send_telegram_message(TELEGRAM_TOKEN, chat_id, content)
